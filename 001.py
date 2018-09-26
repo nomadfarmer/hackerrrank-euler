@@ -15,6 +15,11 @@ My next attempt will be to use the sum of consecutive integers formula.
 I expect that f(15) + f(30) + f(45) + ... + f(15m)  will equal k + 2k + 3k + ... + mk,
 so we can use (n(n+1)/2) with our input // 15 and just calculate the remainder.
 
+----
+
+Right direction, but that was half cocked. The right formula will be:
+m = n // 15
+(f(15) * m) + (150 * ((m - 1) * m)/2) + sum of valid integers between 15m and n. 
 
 '''
 
